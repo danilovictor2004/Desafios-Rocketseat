@@ -1,0 +1,193 @@
+/*--- Geral*/
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #eeebeb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--page-background);
+}
+
+/*-- Header */
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--blue);
+    text-align: center;
+    padding: 6.25rem 2.5rem 12.5rem 2.5rem;
+    border-radius: .625rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFF;
+}
+
+header p {
+    font-size: 0.970rem;
+    color: var(--page-background);
+    line-height: 1.4;
+    margin-top: 2.5rem;
+}
+
+
+/*--Assinaturas */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2.5rem;
+    margin-top: -140px;
+    gap: 20px;
+}
+
+.card {
+    height: 100%;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.card-free-price, .card-basic-price, .card-professional-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-free-price, .card-professional-price {
+    background-color: #FFF;
+}
+
+.card-basic-price {
+    background-color: #ffcc29;
+}
+
+.card-free-price h2, .card-basic-price h2, .card-professional-price h2{
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+.card-basic-price p {
+    font-size: 0.75rem;
+    background-color: #1D539E;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.card-info{
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 1rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.price .cents {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.price span {
+    color: #828799;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #828799;
+    margin: 15px 0px;
+}
+
+ul {
+    border-top: 2px solid rgb(130, 135, 153, .1);
+}
+
+ul li {
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #828799;
+}
+
+.assine {
+    display: block;
+    text-align: center;
+    border: 2px solid #1D539E;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 15px 0px;
+    border-radius: 10px;
+    color: #1D539E;
+}
+
+.assine-basico {
+    background-color: #1D539E;
+    color: #FFF;
+}
+
+@media (min-width: 850px){
+    header p {
+        margin: 2.5rem 0 3.75rem 0;
+    }
+    
+    main {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr); 
+        margin-top: -200px;  
+        align-items: flex-start; 
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price {
+        font-size: 2.25rem;
+    }
+
+    .price .cents {
+        font-size: 1.125rem;
+    }
+
+    .btn-assine {
+        width: 100%;
+        margin-top: auto;
+    }
+}
