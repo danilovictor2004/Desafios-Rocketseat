@@ -1,0 +1,53 @@
+@media (max-width: 810px){
+    /*Formatação menu navegação*/
+    .flex-header{
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .grid-home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-first {
+        gap: 20px;
+    }
+
+    .content-first h2 {
+        font-size: 1.6rem;
+    }
+
+    .featured-image {
+        order: -1;
+    }
+
+    .posts {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 515px) {
+      
+    .others-posts {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 375px;
+    }
+
+    .others-posts p {
+        display: none;
+    }
+}
+
