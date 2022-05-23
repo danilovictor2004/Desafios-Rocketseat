@@ -1,0 +1,124 @@
+/*========= GERAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    font-family: 'Work Sans', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+/*========= Fim geral ===*/
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo img {
+    display: inline-block;
+    max-width: 24.313rem;
+    margin-top: 50px;
+}
+
+.imagem img{
+    height: 100vh;
+}
+
+.read_news {
+    padding: 0px 30px ;
+}
+
+.content {
+    margin-top: 92px;
+    line-height: 1.5;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--title-color);
+}
+
+.subtitle-text {
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-family: 'League Spartan', sans-serif;
+    color: var(--text-color);
+    margin: 9px 0px;
+}
+
+/* ==== FORM */
+form {
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-family: 'Leagye Spartan', sans-serif;
+    color: var(--form-color);
+    margin-bottom: 17px;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group input[type=email] {
+    padding: 15px 20px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-left: 5px solid var(--title-color);
+    outline: none;
+}
+
+.input-group .btn-send{
+    display: block;
+    background-color: var(--bg-button-color);
+    background-image: url('../assets/send.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 15%;
+    border: none;
+    cursor: pointer;
+}
+
+.link_read {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: var(--bg-button-color);
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem {
+        display: none;
+    }
+}
